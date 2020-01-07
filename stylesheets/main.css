@@ -1,0 +1,276 @@
+/********** GENERAL ***********/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+
+
+
+/*********HEADER **************/
+
+header.main {
+  color: white;
+  background-color: #0ACE99;
+}
+
+
+header.main li {
+  display: inline-block;
+}
+
+header.main .logo img{
+  width: 160px;
+}
+
+header.main li a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  transition: background .3s;
+}
+
+
+
+
+/************ GALLERY ********/
+
+
+.gallery, .about, .contact {
+  padding-top: 20px;
+  margin: 0 -15px;
+}
+
+
+.gallery .item {
+  padding: 15px;
+}
+
+
+
+/************ FOOTER ********/
+
+footer.main {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+
+.social img {
+  width: 50px;
+  padding: 10px;
+}
+
+/************ ABOUT ********/
+
+
+.about .profile-pic, .about .info {
+  padding: 15px;
+}
+
+
+/************ CONTACT ********/
+
+
+.contact .info, .contact .contacts {
+  padding: 15px;
+}
+
+.contacts li {
+  position: relative;
+  padding: 10px 0 10px 30px;
+}
+
+.contacts li:before {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+input, label {
+  display: block;
+}
+
+select {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  margin:  10px 0 30px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+label {
+  margin: 10px 0;
+}
+
+form button {
+  width:  100%;
+  background: #0ACE99;
+  color:  white;
+  height: 50px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form .reason {
+  margin-bottom: 30px;
+}
+
+.form .reason label {
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: 768px) { 
+
+  header.main {
+    padding: 20px;
+  }
+
+  header.main .logo-container {
+    float: left;
+    width: 50%;
+  }
+
+  header.main nav {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-top: 20px;
+  }
+
+
+  .gallery .item {
+    float: left;
+    width: 50%;
+  }
+
+
+  .profile-pic {
+    float: left;
+    width: 50%;
+  }
+
+  .contact .info {
+    float: left;
+    width: 60%;
+  }
+
+  .contact .contacts {
+    float: right;
+    width: 40%;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) { 
+
+  
+   header.main li a:hover, header.main li a.active {
+    background: #0ca279;
+  }
+
+  .gallery .item {
+    width: 33.33%;
+  }
+
+  .container {
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+
+  .gallery .item a {
+    display: block;
+    transition: opacity .3s;
+  }
+
+  .gallery .item a .picture {
+    transition: opacity .3s;
+  }
+
+  .gallery .item a:hover .picture {
+    opacity: .7;
+  }
+
+ 
+
+
+
+}
+
+@media only screen and (min-width: 1200px) { 
+
+
+}
+
+
+@media  only screen and (max-width: 767px) { 
+
+
+  header.main {
+    text-align: center;
+  }
+  
+  header.main .logo-container  {
+    padding: 20px;
+  }
+  
+  header.main nav  {
+    padding: 20px;
+    background-color: #0CA279;
+  }
+
+}
